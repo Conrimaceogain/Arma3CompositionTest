@@ -27,17 +27,19 @@ class CfgGroups
 	{
 		side = 8;
 		name = "Compositions"
-		class RRCC
+		class RRCC // Denotes the top level group of compositions we are putting things into
+				   // Think folders
 		{
 			name = "RRCC";
-			class RRCC_COMP // Catégorie de classement (possible d'en ajouter d'autres)
+			class RRCC_COMP // Subcategory
 			{
-				name = "RRCC_COMP"; // Nom de la catégorie	
+				name = "RRCC_COMP";
 				class base
 				{
-					name = "Base";
+					name = "Base"; // Name of the composition as it appears in the Eden editor
 					side = 8;
-					icon = "\a3\Ui_f\data\Map\VehicleIcons\iconVehicle_ca.paa";
+					icon = "\a3\Ui_f\data\Map\VehicleIcons\iconVehicle_ca.paa"; // The icon that is shown to the left side of the name in the Eden editor
+					// Start of the actual composition
 					class Object0	{side = 8; vehicle = "Land_HBarrier_01_big_tower_green_F"; rank = ""; position[] = {14.6789,-28.3159,-0.000457764}; dir = 40.5714;};
 					class Object1	{side = 8; vehicle = "Land_HBarrier_01_wall_6_green_F"; rank = ""; position[] = {12.0567,-13.0325,-0.0514832}; dir = 300.594;};
 					class Object2	{side = 8; vehicle = "Land_HBarrier_01_wall_6_green_F"; rank = ""; position[] = {15.5432,-5.57666,-0.0687256}; dir = 295.616;};
